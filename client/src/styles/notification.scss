@@ -1,0 +1,20 @@
+.notification {
+  width: 80%;
+  align-items: left;
+  margin-top: 1em;
+  border: 2px solid $dark !important;
+  padding: 0.5em;
+  font-family: $font-text;
+}
+
+.note-subject {
+  font-weight: bold;
+}
+
+.note-info {
+  font: italic;
+}
+
+.buttonbuffer {
+  margin-bottom: 140px;
+}

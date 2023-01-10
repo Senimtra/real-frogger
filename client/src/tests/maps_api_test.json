@@ -1,0 +1,92 @@
+[
+  {
+    "firstName": "Alex",
+    "userImage": "alex.png",
+    "location": {
+      "long": 47.9782593,
+      "lat": 7.8410856
+    },
+    "onSite": false
+  },
+  {
+    "firstName": "Gabriela",
+    "userImage": "gabriela.png",
+    "location": {
+      "long": 47.9870151,
+      "lat": 7.8580894
+    },
+    "onSite": false
+  },
+  {
+    "firstName": "Jenny",
+    "userImage": "jenny.png",
+    "location": {
+      "long": 47.9911295,
+      "lat": 7.8527143
+    },
+    "onSite": false
+  },
+  {
+    "firstName": "Monique",
+    "userImage": "monique.png",
+    "location": {
+      "long": 47.9893954,
+      "lat": 7.8447589
+    },
+    "onSite": false
+  },
+  {
+    "firstName": "Robert",
+    "userImage": "robert.png",
+    "location": {
+      "long": 48.0216508,
+      "lat": 7.8518667
+    },
+    "onSite": false
+  },
+  {
+    "firstName": "Roger",
+    "userImage": "roger.png",
+    "location": {
+      "long": 47.9672875,
+      "lat": 7.9145529
+    },
+    "onSite": false
+  },
+  {
+    "firstName": "Sofia",
+    "userImage": "sofia.png",
+    "location": {
+      "long": 47.9666985,
+      "lat": 7.9371049
+    },
+    "onSite": false
+  },
+  {
+    "firstName": "Stephanie",
+    "userImage": "stephanie.png",
+    "location": {
+      "long": 47.9758025,
+      "lat": 7.9337408
+    },
+    "onSite": false
+  },
+  {
+    "firstName": "Tyler",
+    "userImage": "tyler.png",
+    "location": {
+      "long": 47.9867688,
+      "lat": 7.9369487
+    },
+    "onSite": false
+  },
+  {
+    "firstName": "Victor",
+    "userImage": "victor.png",
+    "location": {
+      "long": 47.9843488,
+      "lat": 7.9187848
+    },
+    "onSite": false
+  }
+]

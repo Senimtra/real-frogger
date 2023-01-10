@@ -1,0 +1,245 @@
+// ### Import mixins/vars ###
+@import "_mixins", "_variables";
+
+// ### Import scss files ###
+@import "map-pins.scss", "footer.scss", "contact.scss", "about.scss",
+  "calendar.scss", "notification.scss", "statistics.scss", "googlemaps.scss",
+  "users.scss";
+
+// ### Import fonts ###
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+// ### Hide scrollbars ###
+::-webkit-scrollbar {
+  display: none;
+}
+
+// root {
+//   width: calc(100vh - 6rem);
+// }
+
+html {
+  scrollbar-width: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $font-titles, $font-text;
+  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  //   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  //   sans-serif;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // height: 100vh;
+  // background: url("./../images/lake-3.jpg") no-repeat center fixed;
+  // background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-lgrey {
+  background-color: $lgrey;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-lgrey {
+  color: $lgrey;
+}
+
+.text-orange {
+  color: $orange;
+}
+
+////// NAVBAR //////
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-family: $font-titles;
+}
+a.navbar-brand {
+  color: $dark;
+  font-size: 1.5em;
+  margin-left: 1em;
+}
+
+a.navbar-brand:hover,
+a.navbar-brand:focus {
+  color: $white !important;
+}
+
+.nav-link {
+  display: block;
+  color: $dark !important;
+  font-weight: 600;
+  //margin-left: 1em;
+  font-size: 1.2em;
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-link {
+    transition: none;
+  }
+  .navbar-brand {
+    display: none;
+  }
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: $green !important;
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link.active:focus {
+  color: $green;
+  background-color: white;
+}
+
+.nav-link.active:hover {
+  color: $green;
+  background-color: white;
+}
+.nav-tabs {
+  border-bottom: 0.125rem solid #dee2e6;
+}
+.nav-tabs .nav-link {
+  margin-bottom: -0.125rem;
+  background: none;
+  border: 0.125rem solid transparent;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border-color: $white;
+  isolation: isolate;
+}
+.navbar-toggler {
+  background-color: $green !important;
+  color: $white;
+  font-weight: 500;
+  font-family: $font-titles;
+  // padding: 0.5rem;
+  border-radius: 0.5;
+  border-color: $white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.nav-item {
+  margin-left: 1em !important;
+  color: #1f1604;
+}
+
+///// HOME VIEW /////
+
+// Masterhead heading & subheading //
+
+.masthead {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+}
+
+.masthead h1 {
+  font: $font-titles;
+}
+
+.masthead p {
+  font: $font-text;
+  width: 50%;
+}
+
+.masthead .masthead-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+.masthead .masthead-subheading {
+  color: $dark;
+  font-size: 1.25rem;
+}
+.masthead .masthead-avatar {
+  width: 15rem;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  .masthead .masthead-subheading {
+    color: $dark;
+    font-size: 1.5rem;
+  }
+}
+
+//About text on home view
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+// Dividers // Lines before and after the icons
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: $green;
+  border-radius: 1rem;
+  border-color: $green;
+}
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+.divider-custom .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+
+// BUTTONS //@at-root
+
+.btn-green {
+  background-color: $green;
+  color: $green;
+}
+
+.btn-success {
+  background-color: $green;
+}
